@@ -483,7 +483,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    10 分
                 </div>
                 
 
@@ -590,10 +590,10 @@
 <p>（这里我创建在桌面上）</p>
 <p>先执行</p>
 <pre class=" language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py migrate</code></pre>
-<p>![](/images/python社区搭建图片\python manage.py migrate.png)</p>
+<p>![](/images/python manage.py migrate.png)</p>
 <p>然后执行下面的命令</p>
 <pre class=" language-python"><code class="language-python">py manage<span class="token punctuation">.</span>py runserver</code></pre>
-<p>![](/images/python社区搭建图片\py manage.py runserver.png) </p>
+<p>![](/images/py manage.py runserver.png) </p>
 <p>现在，服务器正在运行，浏览器访问<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
 <p>你应该会看到以下画面</p>
 <p><img src="/images/%E5%B0%8F%E7%81%AB%E7%AE%AD.png"></p>
@@ -607,169 +607,170 @@
 <p>用你是用的编译器打开之后找到INSTALLED_APPS，这是一个列表，我们只需要在最后把APP的名字添加进去即可。</p>
 <p><img src="/images/2.png"> </p>
 <p>在todolist文件夹下新建一个文件夹template用于做网页</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\5.png" alt="5"> </p>
+<p><img src="/images/5.png"> </p>
 <p>在templates下新建文件home.html</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\6.png" alt="6"> </p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\7.png" alt="7"> </p>
+<p><img src="/images/6.png"> </p>
+<p><img src="/images/7.png"> </p>
 <p>我们可以看一下整个项目的结构</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\3.png" alt="3"> </p>
+<p><img src="/images/3.png"> </p>
 <p>我们先转到to_do_list下的urls.py</p>
 <p>这个urls.py的作用就是我们在浏览器上输入网址的时候，该网址就会和这里面的path路径匹配，和谁匹配成功，就交给谁处理。</p>
 <p>在todolist下新建 urls.py</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\8.png" alt="8"> </p>
+<p><img src="/images/8.png"> </p>
 <p>我们在urlpatterns下加入</p>
 <pre class=" language-python"><code class="language-python">path<span class="token punctuation">(</span><span class="token string">'todo/'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span>todolist<span class="token punctuation">.</span>urls<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></code></pre>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\4.png" alt="4"> </p>
+<p><img src="/images/4.png"> </p>
 <p>这个时候我们再看看todolist.urls，说明我们要将home传到名为todolist的app中的urls.py里面，这个urls.py的功能和to_do_list的urls.py的功能其实是一样的，就是匹配然后进行下一步操作。</p>
-<p> <img src="C:\Users\74719\Desktop\python社区搭建\todolist\9.png" alt="9"></p>
+<p><img src="/images/9.png"></p>
 <h4 id="使用bootstrap模板"><a href="#使用bootstrap模板" class="headerlink" title="使用bootstrap模板"></a>使用bootstrap模板</h4><p>打开网站getbootstrap.com</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\10.png" alt="10"> </p>
+<p><img src="/images/10.png"> </p>
 <p>点进去，右键查看源代码，全选复制，粘贴到home.html中</p>
 <p>bootstrap国内cdn</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
-<p>将此粘贴到<img src="C:\Users\74719\Desktop\python社区搭建\todolist\11.png" alt="11"></p>
+<p>将此粘贴到<img src="/images/11.png"></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>></code></pre>
 <p>将此粘贴到</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\13.png" alt="13"></p>
+<p><img src="/images/13.png"></p>
 <p>删除以下部分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\14.png" alt="14"></p>
+<p><img src="/images/14.png"></p>
 <h4 id="修改导航栏"><a href="#修改导航栏" class="headerlink" title="修改导航栏"></a>修改导航栏</h4><p>修改网页标签名字</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\15.png" alt="15"> </p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\16.png" alt="16"> </p>
+<p><img src="/images/15.png"> </p>
+<p><img src="/images/16.png"> </p>
 <p>删除不必要的成分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\17.png" alt="17"> </p>
+<p><img src="/images/17.png"> </p>
 <p>留下link，其余都删除</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\18.png" alt="18"></p>
+<p><img src="/images/18.png"></p>
 <p>将link复制两份</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\19.png" alt="19"> </p>
+<p><img src="/images/19.png"> </p>
 <p>将两个link分别改为  ToDoList 和 About </p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\20.png" alt="20">  </p>
+<p><img src="/images/20.png">  </p>
 <p> 将ToDoList设置为默认高亮(active)</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\21.png" alt="21"></p>
-<h4 id="调整导航栏"><a href="#调整导航栏" class="headerlink" title="调整导航栏"></a>调整导航栏</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="C:\Users\74719\Desktop\python社区搭建\todolist\22.png" alt="22"></h4><p>将此删除</p>
+<p><img src="/images/21.png"></p>
+<h4 id="调整导航栏"><a href="#调整导航栏" class="headerlink" title="调整导航栏"></a>调整导航栏</h4><p><img src="/images/22.png"> </p>
+<p>将此删除</p>
 <p>加入style标签，并且加上id“topnav”</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\23.png" alt="23"> </p>
+<p><img src="/images/23.png"> </p>
 <p>对ID为topnav的nav添加格式（选择ID使用 # ）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\24.png" alt="24"> </p>
+<p><img src="/images/24.png"> </p>
 <p>将右边的 搜索 改为我们想要的 添加</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\25.png" alt="25"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\26.png" alt="26"></p>
+<p><img src="/images/25.png"></p>
+<p><img src="/images/26.png"></p>
 <p>这个时候主页架构基本完成了</p>
 <h4 id="调整主页"><a href="#调整主页" class="headerlink" title="调整主页"></a>调整主页</h4><p>下面我们到bootstrap中使用已经写好的表格样式</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\27.png" alt="27"> </p>
+<p><img src="/images/27.png"> </p>
 <p>复制以下代码</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\28.png" alt="28"></p>
+<p><img src="/images/28.png"></p>
 <p>粘贴到main部分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\29.png" alt="29"> </p>
+<p><img src="/images/29.png"> </p>
 <p>在style下加上两个自定义的class</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\30.png" alt="30"> </p>
+<p><img src="/images/30.png"> </p>
 <p>下面我们来根据需求修改main部分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\31.png" alt="31"> </p>
+<p><img src="/images/31.png"> </p>
 <h4 id="编辑副网页"><a href="#编辑副网页" class="headerlink" title="编辑副网页"></a>编辑副网页</h4><p>接下来我们先创建另外两个网页 About 和Edit</p>
 <p>一个用于介绍本网页的用意，一个用于编辑你的待办清单</p>
 <p>在templates晚间加下新建两个html文件，将home中的代码复制进去</p>
 <p>把 &lt; title&gt;和&lt; main&gt;</p>
 <p>中的部分修改即可</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\32.png" alt="32"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\33.png" alt="33"></p>
+<p><img src="/images/32.png"></p>
+<p><img src="/images/33.png"></p>
 <p>（About中导航栏的高亮也要修改一下）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\40.png" alt="40"></p>
+<p><img src="/images/40.png"></p>
 <p>（Edit中导航栏的高亮也要修改一下，删除 active）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\42.png" alt="42"> </p>
+<p><img src="/images/42.png"> </p>
 <p>在edit中，我们还要在&lt; style&gt;下再自定义一个class</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\34.png" alt="34"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\35.png" alt="35"></p>
+<p><img src="/images/34.png"></p>
+<p><img src="/images/35.png"></p>
 <p>到此 前端部分基本完成</p>
 <hr>
 <h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><p>首先我们先在templates文件夹下新建一个名为todolist的文件夹，将之前的三个网页放进去（目的是避免网页重名）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\36.png" alt="36"> </p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\37.png" alt="37"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\38.png" alt="38"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\39.png" alt="39"></p>
+<p><img src="/images/36.png"> </p>
+<p><img src="/images/37.png"></p>
+<p><img src="/images/38.png"></p>
+<p><img src="/images/39.png"></p>
 <p>同理，我们在About界面点击Todolist也要能跳转</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\41.png" alt="41"></p>
+<p><img src="/images/41.png"></p>
 <p>同理，我们在Edit界面点击ToDoList 和 About也要能跳转</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\43.png" alt="43"></p>
+<p><img src="/images/43.png"></p>
 <p>在home中点击Edit也要能跳转到Edit界面</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\44.png" alt="44"></p>
+<p><img src="/images/44.png"></p>
 <h3 id="前端2"><a href="#前端2" class="headerlink" title="前端2"></a>前端2</h3><h4 id="“添加”功能"><a href="#“添加”功能" class="headerlink" title="“添加”功能"></a>“添加”功能</h4><p>首先，我们先将主页中的四个待办事项注释掉</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\45.png" alt="45"></p>
+<p><img src="/images/45.png"></p>
 <p>处理Add中的内容，使其发送到主页（修改home.html 中的内容）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\46.png" alt="46"></p>
+<p><img src="/images/46.png"></p>
 <p>在 view中 先学习使用列表和字典来存储数据</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\53.png" alt="53"></p>
+<p><img src="/images/53.png"></p>
 <p>下面在home中调用</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\54.png" alt="54"></p>
+<p><img src="/images/54.png"></p>
 <p>判断是否已完成</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\55.png" alt="55"></p>
+<p><img src="/images/55.png"></p>
 <p>在home中 添加判断</p>
 <p>将这里剪切到上面的if中去</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\56.png" alt="56"></p>
+<p><img src="/images/56.png"></p>
 <p>稍加修改</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\57.png" alt="57"></p>
-<h4 id="“删除”功能"><a href="#“删除”功能" class="headerlink" title="“删除”功能"></a>“删除”功能</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\58.png" alt="58"></p>
+<p><img src="/images/57.png"></p>
+<h4 id="“删除”功能"><a href="#“删除”功能" class="headerlink" title="“删除”功能"></a>“删除”功能</h4><p><img src="/images/58.png"></p>
 <p>在urls中添加</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\59.png" alt="59"></p>
+<p><img src="/images/59.png"></p>
 <p>判断用户删除的是哪一项</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\60.png" alt="60"></p>
+<p><img src="/images/60.png"></p>
 <p>注意 只有在html文件中forloop.counter 中间是“.” 其余都是“_”</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\61.png" alt="61"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\62.png" alt="62"></p>
+<p><img src="/images/61.png"></p>
+<p><img src="/images/62.png"></p>
 <h4 id="“编辑”功能"><a href="#“编辑”功能" class="headerlink" title="“编辑”功能"></a>“编辑”功能</h4><p>判断用户编辑的是哪一项</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\63.png" alt="63"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\64.png" alt="64"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\65.png" alt="65"></p>
+<p><img src="/images/63.png"></p>
+<p><img src="/images/64.png"></p>
+<p><img src="/images/65.png"></p>
 <p>在edit.html 中</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\66.png" alt="66"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\67.png" alt="67"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\68.png" alt="68"></p>
+<p><img src="/images/66.png"></p>
+<p><img src="/images/67.png"></p>
+<p><img src="/images/68.png"></p>
 <p>再在edit中添加一个 当输入为空时的警告</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\69.png" alt="69"></p>
-<h4 id="“划掉、撤销”功能"><a href="#“划掉、撤销”功能" class="headerlink" title="“划掉、撤销”功能"></a>“划掉、撤销”功能</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\70.png" alt="70"></p>
+<p><img src="/images/69.png"></p>
+<h4 id="“划掉、撤销”功能"><a href="#“划掉、撤销”功能" class="headerlink" title="“划掉、撤销”功能"></a>“划掉、撤销”功能</h4><p><img src="/images/70.png"></p>
 <p>添加“划掉”的网址</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\72.png" alt="72"></p>
+<p><img src="/images/72.png"></p>
 <p>在views中添加 “划掉”</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\73.png" alt="73"></p>
+<p><img src="/images/73.png"></p>
 <h4 id="添加为空的警告弹窗"><a href="#添加为空的警告弹窗" class="headerlink" title="添加为空的警告弹窗"></a>添加为空的警告弹窗</h4><p>首先修复一下添加为空后的内容</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\74.png" alt="74"></p>
+<p><img src="/images/74.png"></p>
 <p>然后到bootstrap官网复制以下代码</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\75.png" alt="75"></p>
+<p><img src="/images/75.png"></p>
 <p>替换到这个位置 删除上面的&lt; br&gt;</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\76.png" alt="76"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\77.png" alt="77"></p>
+<p><img src="/images/76.png"></p>
+<p><img src="/images/77.png"></p>
 <p>在此输入你要警告的内容（&lt; center&gt;标签为居中）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\78.png" alt="78"></p>
+<p><img src="/images/78.png"></p>
 <p>将其放入判断中</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\79.png" alt="79"></p>
+<p><img src="/images/79.png"></p>
 <p>在html的文末使用国内CDN</p>
-<h4 id="添加成功的弹窗"><a href="#添加成功的弹窗" class="headerlink" title="添加成功的弹窗"></a>添加成功的弹窗</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\80.png" alt="80"></p>
+<h4 id="添加成功的弹窗"><a href="#添加成功的弹窗" class="headerlink" title="添加成功的弹窗"></a>添加成功的弹窗</h4><p><img src="/images/80.png"></p>
 <p>将原cdn更改为bootstrap官网的cdn</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\81.png" alt="81"></p>
+<p><img src="/images/81.png"></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://code.jquery.com/jquery-3.4.1.slim.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
 <h4 id="细化“删除功能”的判断弹窗"><a href="#细化“删除功能”的判断弹窗" class="headerlink" title="细化“删除功能”的判断弹窗"></a>细化“删除功能”的判断弹窗</h4><p>到bootstrap官网找到以下内容</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\82.png" alt="82"></p>
+<p><img src="/images/82.png"></p>
 <p>粘贴到 “未完成”的删除部分，并加以修改成你需要的内容</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\83.png" alt="83"></p>
+<p><img src="/images/83.png"></p>
 <p>将&lt; form&gt;标签剪切到下面</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\84.png" alt="84"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\85.png" alt="85"></p>
+<p><img src="/images/84.png"></p>
+<p><img src="/images/85.png"></p>
 <p>将submit改成button</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\86.png" alt="86"></p>
+<p><img src="/images/86.png"></p>
 <p>删除以下部分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\87.png" alt="87"></p>
+<p><img src="/images/87.png"></p>
 <p>修改以下部分</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\88.png" alt="88"></p>
+<p><img src="/images/88.png"></p>
 <p>到这里，我们的网站就基本完成了</p>
 <hr>
 <h3 id="数据库相关"><a href="#数据库相关" class="headerlink" title="数据库相关"></a>数据库相关</h3><p>一旦关掉服务器，用户所有的数据都将不在，所以我们要用到数据库</p>
 <p>创建Model类，用来描述表的构成（面向网站开发者）</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\89.png" alt="89"></p>
+<p><img src="/images/89.png"></p>
 <p>makemigrations ：制作迁移文件</p>
 <p>在命令行中输入 py manage.py makemigrations</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\90.png" alt="90"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\91.png" alt="91"></p>
+<p><img src="/images/90.png"></p>
+<p><img src="/images/91.png"></p>
 <p>django 会利用这个文件来建表改表（面向数据库管理员）</p>
 <p>每次新增一个model 都要重新 makemigrations</p>
 <p>输入下列命令建表</p>
@@ -782,28 +783,28 @@
 <pre class=" language-python"><code class="language-python">Todo<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>all<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 <pre class=" language-python"><code class="language-python">a_row <span class="token operator">=</span> Todo<span class="token punctuation">(</span>thing<span class="token operator">=</span><span class="token string">'看电影'</span><span class="token punctuation">,</span> dones<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
 a_row<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\92.png" alt="92"></p>
+<p><img src="/images/92.png"></p>
 <pre class=" language-python"><code class="language-python">a_row <span class="token operator">=</span> Todo<span class="token punctuation">(</span>thing<span class="token operator">=</span><span class="token string">'逛街'</span><span class="token punctuation">,</span> dones<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
 a_row<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token punctuation">)</span> </code></pre>
 <p>修改：</p>
 <pre class=" language-python"><code class="language-python">another_row<span class="token punctuation">.</span>thing <span class="token operator">=</span> <span class="token string">'去超市'</span></code></pre>
 <p>在view.py中导入model   并删除列表</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\93.png" alt="93"></p>
+<p><img src="/images/93.png"></p>
 <p>并做以下修改</p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\96.png" alt="96"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\94.png" alt="94"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\95.png" alt="95"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\97.png" alt="97"></p>
-<h4 id="修改“删除”功能"><a href="#修改“删除”功能" class="headerlink" title="修改“删除”功能"></a>修改“删除”功能</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\98.png" alt="98"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\99.png" alt="99"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\100.png" alt="100"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\101.png" alt="101"></p>
-<h4 id="修改“划掉”、“撤销”功能"><a href="#修改“划掉”、“撤销”功能" class="headerlink" title="修改“划掉”、“撤销”功能"></a>修改“划掉”、“撤销”功能</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\102.png" alt="102"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\103.png" alt="103"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\104.png" alt="104"></p>
-<h4 id="修改“编辑”功能"><a href="#修改“编辑”功能" class="headerlink" title="修改“编辑”功能"></a>修改“编辑”功能</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\105.png" alt="105"></p>
-<p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\106.png" alt="106"></p>
-<h4 id="修改一个小bug"><a href="#修改一个小bug" class="headerlink" title="修改一个小bug"></a>修改一个小bug</h4><p><img src="C:\Users\74719\Desktop\python社区搭建\todolist\107.png" alt="107"></p>
+<p><img src="/images/96.png"></p>
+<p><img src="/images/94.png"></p>
+<p><img src="/images/95.png"></p>
+<p><img src="/images/97.png"></p>
+<h4 id="修改“删除”功能"><a href="#修改“删除”功能" class="headerlink" title="修改“删除”功能"></a>修改“删除”功能</h4><p><img src="/images/98.png"></p>
+<p><img src="/images/99.png"></p>
+<p><img src="/images/100.png"></p>
+<p><img src="/images/101.png"></p>
+<h4 id="修改“划掉”、“撤销”功能"><a href="#修改“划掉”、“撤销”功能" class="headerlink" title="修改“划掉”、“撤销”功能"></a>修改“划掉”、“撤销”功能</h4><p><img src="/images/102.png"></p>
+<p><img src="/images/103.png"></p>
+<p><img src="/images/104.png"></p>
+<h4 id="修改“编辑”功能"><a href="#修改“编辑”功能" class="headerlink" title="修改“编辑”功能"></a>修改“编辑”功能</h4><p><img src="/images/105.png"></p>
+<p><img src="/images/106.png"></p>
+<h4 id="修改一个小bug"><a href="#修改一个小bug" class="headerlink" title="修改一个小bug"></a>修改一个小bug</h4><p><img src="/images/107.png"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
