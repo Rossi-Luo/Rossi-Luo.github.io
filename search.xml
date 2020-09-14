@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>model</title>
+      <link href="2020/09/14/model/"/>
+      <url>2020/09/14/model/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h1><p>模型是一个定义数据源的数据，它包含要存储数据的一些属性和行为。通常，每一个模型对应数据库中的一个数据表。</p><ul><li>每一个模型是django.db.models.Model的子类</li><li>每一个模型属性代表数据表的一个字段。</li><li>Django提供了自动生成的数据库访问API，使用模型操作数据库很方便</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ORM</title>
+      <link href="2020/09/14/ORM/"/>
+      <url>2020/09/14/ORM/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h1><p>ORM，O指对象、R指关系、M指映射Mapping和模型Model；</p><p>对象关系映射，对象和关系之间的映射，使用面向对象的方式来操作数据库</p><p>ORM是封装在pymysq1上层的文件。他的作用是把py thon语句转换成sq1语句，从而去数据库里操作数据。<br>从数据库里获得的数据，经过orm转换为对象，对象可以直接调用属性获得值。orm本质是个中转站。</p><p>orm能干的事：<br>   1 创建表，修改表，删除表<br>   2 插入数据<br>   3 修改数据<br>   4 删除数据</p><p>ORM图解</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91/ORM%E5%9B%BE%E8%A7%A3.png"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ORM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue单元测试</title>
       <link href="2020/09/14/Vue%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
       <url>2020/09/14/Vue%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</url>
@@ -12,31 +44,13 @@
       
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2020/09/14/ORM/"/>
-      <url>2020/09/14/ORM/</url>
-      
-        <content type="html"><![CDATA[<h1 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h1><p>ORM，O指对象、R指关系、M指映射Mapping和模型Model；</p><p>对象关系映射，对象和关系之间的映射，使用面向对象的方式来操作数据库</p><p>ORM是封装在pymysq1上层的文件。他的作用是把py thon语句转换成sq1语句，从而去数据库里操作数据。<br>从数据库里获得的数据，经过orm转换为对象，对象可以直接调用属性获得值。orm本质是个中转站。</p><p>orm能干的事：<br>   1 创建表，修改表，删除表<br>   2 插入数据<br>   3 修改数据<br>   4 删除数据</p><p>ORM图解</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91/ORM%E5%9B%BE%E8%A7%A3.png"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2020/09/14/model/"/>
-      <url>2020/09/14/model/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h1><p>模型是一个定义数据源的数据，它包含要存储数据的一些属性和行为。通常，每一个模型对应数据库中的一个数据表。</p><ul><li>每一个模型是django.db.models.Model的子类</li><li>每一个模型属性代表数据表的一个字段。</li><li>Django提供了自动生成的数据库访问API，使用模型操作数据库很方便</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> 单元测试 </tag>
+            
+        </tags>
       
     </entry>
     
